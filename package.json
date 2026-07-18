@@ -1,0 +1,19 @@
+{
+  "name": "aa-community-edition-automation",
+  "version": "1.0.0",
+  "description": "UI automation suite for Automation Anywhere Community Edition - Message Box Task and Form Rules Builder flows",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:usecase1": "playwright test tests/usecase1-messagebox.spec.js",
+    "test:usecase2": "playwright test tests/usecase2-rulesbuilder.spec.js",
+    "test:report": "playwright show-report",
+    "codegen": "playwright codegen https://www.automationanywhere.com/products/enterprise/community-edition"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
